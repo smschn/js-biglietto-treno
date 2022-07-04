@@ -6,7 +6,7 @@ const scontoMinorenne = 0.8;
 const scontoSenior = 0.6;
 let prezzoBiglietto;
 
-// calcolo prezzo
+// calcolo prezzo del biglietto
 if (etaPasseggero >= 18 && etaPasseggero < 65) {
     prezzoBiglietto = kmPercorso * prezzoAlKm;
     let prezzoBigliettoDueDecimali = prezzoBiglietto.toFixed(2); // limito i decimali a due nel prezzo finale
