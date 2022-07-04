@@ -7,7 +7,13 @@ const scontoSenior = 0.6;
 let prezzoBiglietto;
 
 // calcolo prezzo
-if (etaPasseggero < 18) {
+if (etaPasseggero >= 18 && etaPasseggero < 65) {
+    prezzoBiglietto = kmPercorso * prezzoAlKm;
+    alert('Il prezzo del biglietto è ' + prezzoBiglietto);
+} else if (etaPasseggero >= 65) {
+    prezzoBiglietto = kmPercorso * prezzoAlKm * scontoSenior;
+    alert('Il prezzo del biglietto è ' + prezzoBiglietto);
+} else {
     prezzoBiglietto = kmPercorso * prezzoAlKm * scontoMinorenne;
     alert('Il prezzo del biglietto è ' + prezzoBiglietto);
 }
