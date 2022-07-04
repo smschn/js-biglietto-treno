@@ -1,6 +1,6 @@
 // definisco le variabili e il loro inserimento tramite prompt
 const kmPercorso = parseInt(prompt('Quanti km vuoi percorrere?'));
-const etaPasseggero = parseInt(prompt('Quanti hanni hai?'));
+const etaPasseggero = parseInt(prompt('Quanti anni hai?'));
 const prezzoAlKm = 0.21;
 const scontoMinorenne = 0.8;
 const scontoSenior = 0.6;
