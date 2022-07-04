@@ -1,9 +1,16 @@
 // definisco le variabili e il loro inserimento tramite prompt
-const kmPercorso = prompt('Quanti km vuoi percorrere?')
-const etaPasseggero = prompt('Quanti hanni hai?')
-const prezzoAlKm = 0.21
+const kmPercorso = prompt('Quanti km vuoi percorrere?');
+const etaPasseggero = prompt('Quanti hanni hai?');
+const prezzoAlKm = 0.21;
+const scontoMinorenne = 0.8;
+const scontoSenior = 0.6;
+let prezzoBiglietto;
 
 // calcolo prezzo
+if (etaPasseggero < 18) {
+    prezzoBiglietto = kmPercorso * prezzoAlKm * scontoMinorenne;
+    alert('Il prezzo del biglietto è ' + prezzoBiglietto);
+}
 
 // debug
 console.log(kmPercorso);
